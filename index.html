@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parámetros bioquímicos nutricionales | Desnutrición</title>
+<meta name="description" content="Página educativa sobre parámetros bioquímicos nutricionales relacionados con la desnutrición.">
+<style>
+:root{
+  --bg:#f5f8fb; --card:#ffffff; --ink:#17324d; --muted:#607386;
+  --primary:#176b87; --primary2:#0d4f68; --accent:#e7a74f;
+  --line:#dbe5ec; --soft:#eaf5f8; --danger:#b54b4b; --shadow:0 10px 28px rgba(22,55,75,.09);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{background:linear-gradient(135deg,#0d4f68,#176b87 58%,#3c8d9d);color:white;padding:54px 0 42px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:300px;height:300px;border:55px solid rgba(255,255,255,.08);border-radius:50%;right:-90px;top:-130px}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;font-size:.85rem}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.08;margin:15px 0 12px}
+.subtitle{font-size:1.08rem;max-width:760px;color:#eaf7fa}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.meta span{background:white;color:var(--primary2);padding:8px 12px;border-radius:10px;font-size:.9rem;font-weight:600}
+nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.navin{display:flex;gap:6px;overflow:auto;padding:8px 0}
+nav a{text-decoration:none;white-space:nowrap;padding:9px 12px;border-radius:9px;color:var(--muted);font-size:.9rem}
+nav a:hover{background:var(--soft);color:var(--primary2)}
+section{padding:52px 0}
+.section-title{font-size:1.9rem;margin:0 0 8px}
+.lead{color:var(--muted);max-width:850px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+.card h3{margin-top:0;color:var(--primary2)}
+.icon{font-size:1.7rem}
+.callout{border-left:5px solid var(--accent);background:#fff9ef;padding:18px 20px;border-radius:0 14px 14px 0;margin:20px 0}
+.warning{border-left:5px solid var(--danger);background:#fff3f3;padding:18px 20px;border-radius:0 14px 14px 0;margin:20px 0}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+.table-wrap{overflow:auto;background:white;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;min-width:760px}
+th,td{text-align:left;padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--primary2);color:#fff}
+tr:nth-child(even) td{background:#f8fbfc}
+input{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;font-size:1rem;outline:none}
+input:focus{border-color:var(--primary)}
+.search{margin:18px 0}
+.tag{display:inline-block;background:var(--soft);color:var(--primary2);padding:4px 8px;border-radius:999px;font-size:.78rem;font-weight:700;margin:2px}
+.steps{counter-reset:step;display:grid;gap:12px}
+.step{background:white;border:1px solid var(--line);border-radius:14px;padding:15px 18px 15px 58px;position:relative}
+.step:before{counter-increment:step;content:counter(step);position:absolute;left:16px;top:13px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:white;font-weight:700}
+.stat{font-size:1.6rem;font-weight:800;color:var(--primary2)}
+footer{background:#102f42;color:#dcecf2;padding:35px 0}
+footer a{color:#fff}
+.small{font-size:.88rem;color:var(--muted)}
+footer .small{color:#b9d0da}
+.top{position:fixed;right:18px;bottom:18px;background:var(--primary2);color:#fff;border:0;border-radius:50%;width:45px;height:45px;cursor:pointer;box-shadow:var(--shadow);display:none}
+.quiz button{border:0;background:var(--primary);color:white;padding:10px 15px;border-radius:9px;cursor:pointer;margin-top:8px}
+.result{font-weight:700;margin-top:10px}
+@media(max-width:800px){.grid,.grid2{grid-template-columns:1fr}section{padding:38px 0}header{padding:40px 0 34px}}
+</style>
+</head>
+<body>
+<header id="inicio">
+  <div class="container">
+    <span class="badge">BIOQUÍMICA HUMANA · PROYECTO ACADÉMICO</span>
+    <h1>Parámetros bioquímicos nutricionales</h1>
+    <p class="subtitle">Desnutrición: evaluación mediante pruebas de laboratorio, condiciones de la muestra e intervención del personal de enfermería.</p>
+    <div class="meta">
+      <span>Sección B</span>
+      <span>31 de agosto de 2026</span>
+      <span>Santa Ana, El Salvador</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+ <div class="container navin">
+  <a href="#objetivos">Objetivos</a>
+  <a href="#desnutricion">Desnutrición</a>
+  <a href="#parametros">Parámetros</a>
+  <a href="#laboratorio">Laboratorio</a>
+  <a href="#muestra">Muestra</a>
+  <a href="#enfermeria">Enfermería</a>
+  <a href="#referencias">Referencias</a>
+ </div>
+</nav>
+
+<main>
+<section id="objetivos">
+ <div class="container">
+  <h2 class="section-title">Objetivos</h2>
+  <p class="lead">La página resume la investigación realizada para analizar la desnutrición y los parámetros bioquímicos y hematológicos útiles como parte de la valoración nutricional.</p>
+  <div class="grid">
+   <article class="card"><div class="icon"></div><h3>Objetivo general</h3><p>Analizar las generalidades de la desnutrición e identificar los parámetros bioquímicos y hematológicos clave para la valoración nutricional del paciente.</p></article>
+   <article class="card"><div class="icon"></div><h3>Objetivo específico</h3><p>Describir el procedimiento correcto para la obtención, identificación, transporte y conservación de muestras sanguíneas bajo normas de bioseguridad.</p></article>
+   <article class="card"><div class="icon"></div><h3>Objetivo específico</h3><p>Reconocer la importancia de la detección oportuna de alteraciones nutricionales y del cuidado mediante seguimiento y educación nutricional.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="desnutricion">
+ <div class="container">
+  <h2 class="section-title">1. Generalidades de la desnutrición</h2>
+  <p class="lead">La desnutrición ocurre cuando el organismo no recibe o no puede utilizar adecuadamente la energía y los nutrientes necesarios para mantener sus funciones normales.</p>
+  <div class="grid">
+   <article class="card"><h3>Desnutrición aguda</h3><p>Se desarrolla en un período relativamente corto y se caracteriza principalmente por pérdida de peso en relación con la talla.</p></article>
+   <article class="card"><h3>Desnutrición crónica</h3><p>Se desarrolla durante un período prolongado. En niños puede manifestarse con crecimiento menor al esperado y afectar el desarrollo físico y cognitivo.</p></article>
+   <article class="card"><h3>Insuficiencia ponderal</h3><p>También llamada bajo peso: el peso es inferior al esperado para la edad. Debe valorarse junto con talla y evolución del crecimiento.</p></article>
+   <article class="card"><h3>Deficiencia de micronutrientes</h3><p>Falta de vitaminas o minerales esenciales. Entre las deficiencias frecuentes se encuentran hierro, vitamina A y yodo.</p></article>
+   <article class="card"><h3>Desnutrición calórico-proteica</h3><p>Existe una deficiencia importante de energía y proteínas, con utilización progresiva de reservas de grasa y proteínas musculares.</p></article>
+   <article class="card"><h3>Factores de riesgo</h3><p>Alimentación insuficiente o poco variada, dificultades económicas, enfermedades gastrointestinales, diarrea prolongada, infecciones, pérdida de apetito, vómitos y problemas para masticar o deglutir.</p></article>
+  </div>
+  <div class="grid2" style="margin-top:18px">
+   <article class="card"><h3>Signos y síntomas</h3><ul><li>Pérdida de peso y masa muscular.</li><li>Debilidad y cansancio.</li><li>Alteraciones de piel y cabello.</li><li>Dificultad para cicatrizar.</li><li>Anemia en determinados casos.</li><li>Edema en situaciones graves.</li><li>Mayor susceptibilidad a infecciones.</li><li>Alteraciones gastrointestinales.</li></ul></article>
+   <article class="card"><h3>¿Por qué detectarla temprano?</h3><p>La detección oportuna permite identificar el problema antes de que avance, valorar posibles causas e iniciar medidas para mejorar el estado nutricional y disminuir el riesgo de complicaciones.</p><div class="callout"><strong>Importante:</strong> ningún dato clínico o de laboratorio debe utilizarse de forma aislada para establecer el diagnóstico.</div></article>
+  </div>
+ </div>
+</section>
+
+<section id="parametros">
+ <div class="container">
+  <h2 class="section-title">2. Parámetros bioquímicos nutricionales</h2>
+  <p class="lead">Son mediciones obtenidas principalmente mediante análisis de sangre que aportan información complementaria sobre el estado metabólico, nutricional y fisiológico.</p>
+  <div class="grid">
+   <article class="card"><h3>Albúmina</h3><p>Proteína producida principalmente por el hígado. Ayuda a mantener el líquido dentro de los vasos sanguíneos y transporta sustancias.</p><span class="tag">Proteína sérica</span></article>
+   <article class="card"><h3>Prealbúmina</h3><p>También llamada transtiretina. Participa en el transporte de hormonas tiroideas y vitamina A y cambia más rápidamente que la albúmina.</p><span class="tag">Proteína sérica</span></article>
+   <article class="card"><h3>Proteínas totales</h3><p>Miden principalmente albúmina y globulinas. Participan en reparación de tejidos, inmunidad y procesos metabólicos.</p><span class="tag">Proteínas</span></article>
+   <article class="card"><h3>Transferrina</h3><p>Proteína producida principalmente por el hígado cuya función principal es transportar hierro en la sangre.</p><span class="tag">Hierro</span></article>
+   <article class="card"><h3>Hemoglobina</h3><p>Proteína rica en hierro de los glóbulos rojos. Su función principal es transportar oxígeno hacia los tejidos.</p><span class="tag">Hematología</span></article>
+   <article class="card"><h3>Hematocrito</h3><p>Representa el porcentaje de la sangre compuesto por glóbulos rojos y se utiliza junto con la hemoglobina para valorar alteraciones como anemia.</p><span class="tag">Hematología</span></article>
+   <article class="card"><h3>Colesterol</h3><p>Aporta información sobre el metabolismo de las grasas y el riesgo cardiovascular. Un nivel bajo puede encontrarse en algunos problemas nutricionales, pero no diagnostica desnutrición por sí solo.</p><span class="tag">Metabolismo lipídico</span></article>
+   <article class="card"><h3>Glucosa</h3><p>Una de las principales fuentes de energía. Permite valorar el metabolismo de los carbohidratos; puede disminuir ante ingesta insuficiente.</p><span class="tag">Energía</span></article>
+   <article class="card"><h3>Sodio y potasio</h3><p>Electrolitos esenciales para el equilibrio de líquidos y el funcionamiento de nervios y músculos. Sus alteraciones pueden relacionarse con pérdidas, hidratación y enfermedades.</p><span class="tag">Electrolitos</span></article>
+  </div>
+  <div class="warning"><strong>Interpretación:</strong> inflamación, infecciones, enfermedades hepáticas o renales, hidratación, medicamentos y otras condiciones pueden modificar los resultados. Los parámetros deben interpretarse junto con la historia clínica, alimentación, peso, talla, exploración física y otros estudios.</div>
+ </div>
+</section>
+
+<section id="laboratorio">
+ <div class="container">
+  <h2 class="section-title">3. Pruebas de laboratorio y valores de referencia</h2>
+  <p class="lead">Los rangos pueden variar ligeramente según el laboratorio. Esta tabla reproduce los valores de referencia incluidos en el trabajo.</p>
+  <div class="search"><input id="buscar" type="search" placeholder="Buscar:  Buscar: albúmina, glucosa, sodio, anemia..."></div>
+  <div class="table-wrap">
+   <table id="tabla">
+    <thead><tr><th>Parámetro</th><th>Valor de referencia</th><th>¿Qué puede indicar una alteración?</th><th>Importancia en desnutrición</th></tr></thead>
+    <tbody>
+     <tr><td>Albúmina</td><td>3.4–5.4 g/dL</td><td>Disminuida: desnutrición, enfermedad hepática/renal, infecciones, entre otras. Elevada: principalmente deshidratación.</td><td>Complementa la valoración; no debe usarse sola.</td></tr>
+     <tr><td>Prealbúmina (transtiretina)</td><td>15–36 mg/dL</td><td>Disminuida en procesos inflamatorios, enfermedades y alteraciones nutricionales. Puede elevarse en algunas condiciones como insuficiencia renal.</td><td>Aporta información complementaria; no es un indicador aislado.</td></tr>
+     <tr><td>Proteínas totales</td><td>6.5–8.1 g/dL</td><td>Disminuidas en malnutrición, enfermedad hepática/renal o pérdida de proteínas. Elevadas en algunas inflamaciones o infecciones crónicas.</td><td>Ayudan a valorar alteraciones relacionadas con proteínas.</td></tr>
+     <tr><td>Transferrina</td><td>200–360 mg/dL</td><td>Disminuida en algunas situaciones de desnutrición, inflamación y enfermedad hepática. Puede aumentar en deficiencia de hierro y embarazo.</td><td>Complementa la valoración del estado proteico y metabolismo del hierro.</td></tr>
+     <tr><td>Hemoglobina</td><td>Hombres 13–18 g/dL; mujeres 12–16 g/dL</td><td>Disminución: anemia; causas nutricionales incluyen hierro, folato y vitamina B12. Elevación puede relacionarse con deshidratación.</td><td>Ayuda a identificar anemia y orientar posibles deficiencias.</td></tr>
+     <tr><td>Hematocrito</td><td>Hombres 40–55%; mujeres 36–48%</td><td>Disminución: puede acompañar anemia. Los valores varían por edad, sexo, altitud, tabaquismo y otros factores.</td><td>Se interpreta junto con hemoglobina y otros parámetros.</td></tr>
+     <tr><td>Colesterol total</td><td>&lt; 200 mg/dL (deseable en adultos)</td><td>Elevaciones, especialmente de LDL, se relacionan con mayor riesgo cardiovascular.</td><td>Información complementaria sobre metabolismo de grasas; no diagnostica desnutrición.</td></tr>
+     <tr><td>Glucosa en ayunas</td><td>70–99 mg/dL</td><td>Elevada: puede relacionarse con prediabetes o diabetes. Baja: hipoglucemia.</td><td>Permite valorar estado metabólico y aprovechamiento de carbohidratos.</td></tr>
+     <tr><td>Sodio</td><td>135–145 mEq/L</td><td>Bajo: pérdidas, vómitos, diarrea, algunas enfermedades y desnutrición. Alto: principalmente pérdida de líquidos/deshidratación.</td><td>Ayuda a valorar el equilibrio hidroelectrolítico.</td></tr>
+     <tr><td>Potasio</td><td>3.7–5.2 mEq/L</td><td>Bajo: pérdidas, vómitos o diarrea. Alto: algunas enfermedades renales y otras condiciones.</td><td>Importante para valorar equilibrio hidroelectrolítico; alteraciones importantes pueden afectar músculos y ritmo cardíaco.</td></tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+</section>
+
+<section id="muestra">
+ <div class="container">
+  <h2 class="section-title">4. Tipo de muestra y manejo</h2>
+  <div class="grid2">
+   <article class="card"><h3>Tipo de muestra</h3><p>La muestra utilizada principalmente es la <strong>sangre</strong>, generalmente obtenida mediante venopunción. Dependiendo de la prueba puede analizarse suero, plasma o sangre total.</p><p>Una muestra adecuada y suficiente es fundamental para obtener resultados confiables.</p></article>
+   <article class="card"><h3>Preparación del paciente</h3><ul><li>Verificar identidad y solicitud.</li><li>Explicar claramente el procedimiento.</li><li>Comprobar si existe preparación especial.</li><li>Preguntar por medicamentos, vitaminas o suplementos.</li><li>Confirmar que se cumplieron las indicaciones previas.</li></ul></article>
+  </div>
+  <h3 style="margin-top:30px">Procedimiento general para la obtención</h3>
+  <div class="steps">
+   <div class="step">Verificar identidad del paciente y solicitud.</div>
+   <div class="step">Explicar el procedimiento y realizar higiene de manos.</div>
+   <div class="step">Preparar material y colocar al paciente adecuadamente.</div>
+   <div class="step">Seleccionar sitio y realizar antisepsia.</div>
+   <div class="step">Realizar venopunción y obtener la cantidad necesaria.</div>
+   <div class="step">Colocar la muestra en el tubo apropiado.</div>
+   <div class="step">Retirar la aguja y desechar el cortopunzante inmediatamente.</div>
+   <div class="step">Identificar correctamente la muestra y prepararla para procesamiento o traslado.</div>
+  </div>
+  <div class="grid2" style="margin-top:20px">
+   <article class="card"><h3>Ayuno</h3><p>No todas las pruebas requieren ayuno. Cuando se solicita, generalmente se indica un período de <strong>8 a 12 horas</strong>, según la prueba. Normalmente se permite agua simple y se recomienda evitar alimentos, otras bebidas, fumar y ejercicio.</p></article>
+   <article class="card"><h3>Conservación y transporte</h3><p>La muestra debe identificarse correctamente. Si no puede procesarse de inmediato, debe conservarse según las condiciones establecidas para el análisis y transportarse en recipientes adecuados, cerrados y resistentes a fugas.</p></article>
+  </div>
+  <div class="warning"><strong>Bioseguridad:</strong> higiene de manos antes y después, guantes y equipo de protección indicado, evitar manipulación innecesaria de agujas, desechar cortopunzantes inmediatamente y manipular las muestras de forma segura.</div>
+ </div>
+</section>
+
+<section id="enfermeria">
+ <div class="container">
+  <h2 class="section-title">5. Intervención del personal de enfermería</h2>
+  <p class="lead">Enfermería participa en la detección temprana, toma y manejo de muestras, educación, seguimiento y comunicación con el equipo de salud.</p>
+  <div class="grid">
+   <article class="card"><h3>1. Preparación y orientación</h3><p>Explicar la finalidad del procedimiento, resolver dudas, verificar indicaciones previas y favorecer un ambiente de confianza.</p></article>
+   <article class="card"><h3>2. Toma y manejo</h3><p>Seguir protocolos de identificación, higiene de manos y bioseguridad; asegurar recipiente, identificación y envío adecuados.</p></article>
+   <article class="card"><h3>3. Vigilancia</h3><p>Observar pérdida de peso, disminución del apetito, debilidad, fatiga, edema y alteraciones de la alimentación, además de factores de riesgo.</p></article>
+   <article class="card"><h3>4. Resultados</h3><p>Reconocer valores fuera de referencia y cambios importantes, registrarlos y comunicarlos oportunamente al equipo de salud.</p></article>
+   <article class="card"><h3>5. Educación nutricional</h3><p>Orientar sobre alimentación variada, fuentes de proteínas, frutas, verduras e hidratación, involucrando a la familia cuando sea necesario.</p></article>
+   <article class="card"><h3>6. Seguimiento</h3><p>Registrar peso, talla, IMC, alimentación, resultados de laboratorio y evolución del estado nutricional para identificar cambios.</p></article>
+  </div>
+  <div class="callout"><strong>Rol clave:</strong> enfermería contribuye a prevenir complicaciones mediante valoración, educación, seguimiento y comunicación con el equipo de salud. No debe establecer por sí sola el diagnóstico de desnutrición a partir de un único resultado.</div>
+ </div>
+</section>
+
+<section id="referencias">
+ <div class="container">
+  <h2 class="section-title">Referencias</h2>
+  <div class="card">
+   <ol>
+    <li>Mahan, L. K., & Raymond, J. L. (2017). <em>Krause. Dietoterapia</em> (14.ª ed.). Elsevier Health Sciences.</li>
+    <li>Organización Mundial de la Salud. (2024, 1 de marzo). <em>Malnutrición</em>.</li>
+    <li>Organización Mundial de la Salud. <em>Desnutrición</em>.</li>
+    <li>Organización Mundial de la Salud. (2024–2025). <em>Anemia y Guideline on haemoglobin cutoffs to define anaemia</em>.</li>
+    <li>MedlinePlus – Biblioteca Nacional de Medicina de EE. UU., NIH. <em>Pruebas de laboratorio: prealbúmina, proteína total, hemoglobina, hematocrito, colesterol, glucosa, sodio y potasio</em>.</li>
+    <li>Evans, D. C., Corkins, M. R., Lewis, E., & ASPEN Board of Directors. (2021). <em>The use of visceral proteins as nutrition markers: An ASPEN position paper</em>. Nutrition in Clinical Practice, 36(1), 22–28.</li>
+    <li>Merck Manual. <em>Generalidades sobre la desnutrición</em>. Versión para profesionales.</li>
+    <li>National Center for Biotechnology Information. <em>Nutritional Assessment. StatPearls</em>.</li>
+   </ol>
+   <p class="small">Contenido académico elaborado a partir del documento de investigación proporcionado para la actividad de Bioquímica Humana.</p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <h3>Parámetros bioquímicos nutricionales · Desnutrición</h3>
+  <p>Material educativo para presentación académica de Bioquímica Humana.</p>
+  <p class="small"><strong>Docente:</strong> MSc. Adriana María Mendoza Ramos · <strong>Sección:</strong> B · Santa Ana, El Salvador.</p>
+ </div>
+</footer>
+
+<script>
+const input=document.getElementById('buscar');
+input.addEventListener('input',()=>{
+  const term=input.value.toLowerCase().trim();
+  document.querySelectorAll('#tabla tbody tr').forEach(row=>{
+    row.style.display=row.innerText.toLowerCase().includes(term)?'':'none';
+  });
+});
+</script>
+</body>
+</html>
